@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="icon" href="assets/img/rocket.svg" type="image/x-icon">
+
+    <title>Introduccion jQuery</title>
+</head>
+
+<body>
+    <!--INICIO Seccion NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-logo" src="assets/img/rocket.svg" alt="Logo-Empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Javascript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jquery.html">jQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mindicador.html">Mindicador.cl</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokemon.html">Pokemon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openweathermap.html">OpenWeatherMap</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sitios Interes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="http://getbootstrap.com">BootStrap</a></li>
+                            <li><a class="dropdown-item" href="http://www.w3schools.com">w3 Schools</a></li>
+                            <li><a class="dropdown-item" href="http://www.stackoverflow.com">Stackoverflow</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--FIN Seccion NAV-->
+
+    <!--INICIO Sección MAIN-->
+    <main>
+        <div class="container bg-dark text-white text-center py-5 rounded mt-4">
+            <h1>Introducción al jQuery</h1>
+        </div>
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo funcion click</h2>
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Presioname para ver tu resolución de pantalla" type="button" id="button01">Presiona aquí</button>
+                </div>
+                <div class="col-6">
+                    <p id="accion01"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo función .hide | .show | .toogle</h2>
+                    <button class="btn btn-outline-danger" type="button" id="button02_1">Ocultar</button>
+                    <button class="btn btn-outline-success" type="button" id="button02_2">Mostrar</button>
+                    <button class="btn btn-outline-warning" type="button" id="button02_3">Togglear</button>
+                </div>
+                <div class="col-6">
+                    <p id="accion02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus dolore corporis perspiciatis, quidem officiis asperiores eligendi, atque, expedita eum fuga accusamus? Tempore, consectetur. Voluptatibus iure provident officia fuga. Et, pariatur, atque architecto delectus asperiores, libero ab accusamus hic quisquam est minima iste quo magnam. Asperiores sapiente iusto tempore assumenda.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo función addClass | removeClass</h2>
+                    <button class="btn btn-outline-info" type="button" id="button03_1">Cambiar a color Purpura</button>
+                    <button class="btn btn-outline-danger" type="button" id="button03_4">Cambiar a color Rojo</button>
+                    <button class="btn btn-outline-primary" type="button" id="button03_2">Agregar estilo italic</button>
+                    <button class="btn btn-outline-warning" type="button" id="button03_3">Remover todas las clases</button>
+                </div>
+                <div class="col-6">
+                    <p id="accion03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus dolore corporis perspiciatis, quidem officiis asperiores eligendi, atque, expedita eum fuga accusamus? Tempore, consectetur. Voluptatibus iure provident officia fuga. Et, pariatur, atque architecto delectus asperiores, libero ab accusamus hic quisquam est minima iste quo magnam. Asperiores sapiente iusto tempore assumenda.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo función .slideDown</h2>
+                    <button class="btn btn-outline-success" type="button" id="button04">Presiona para ver el efecto</button>
+                </div>
+                <div class="col-6">
+                    <img id="accion04" class="imagen-oculta" src="http://picsum.photos/250/250" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo función .slideUp</h2>
+                    <button class="btn btn-outline-success" type="button" id="button05">Presiona para ver el efecto</button>
+                </div>
+                <div class="col-6">
+                    <img id="accion05" src="http://picsum.photos/250/250" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Manejo función .slideToggle</h2>
+                    <button class="btn btn-outline-success" type="button" id="button06">Presiona para ver el efecto</button>
+                </div>
+                <div class="col-6">
+                    <img id="accion06" src="http://picsum.photos/250/250" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h2>Manejo función .attr | .prop</h2>
+                <div class="col-4">
+                    <button class="btn btn-outline-warning" type="button" id="button07_1">Encender la luz</button>                    
+                </div>
+                <div class="col-4">
+                    <img id="accion07" src="assets/img/pic_bulboff.gif" alt="Luz apagada">
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-outline-dark" type="button" id="button07_2">Apagar la luz</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Fin Sección MAIN-->
+
+    <!--INICIO Seccion FOOTER-->
+    <footer>
+        <div class="container-fluid py-5 mt-2 bg-dark text-white">
+            <div class="row text-warning">
+                <div class="col-md-4 text-center mb-3">
+                    <img class="img-logo d-inline" src="assets/img/rocket.svg" alt="Rocket">
+                    <p class="d-inline">&copy;2022 - Rocket Inc.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-warning">Mapa del sitio</h4>
+                    <div class="row col-6">
+                        <hr>
+                    </div>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="tables.html">Tables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-transparent border-dark">
+                        <div class="card-header">
+                            <h4 class="card-title">¡Subscríbete a nuestro newsletter!</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <input type="email" id="email_subscriptor" name="email_subscriptor" class="form-control"
+                                    placeholder="Ingresa tu correo electrónico">
+                                <button class="btn btn-outline-warning" type="button"
+                                    id="btn_subscriptor">Enviar</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav-link" href="http://www.facebook.com" target="blank">
+                                        <span class="text-warning fs-1">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="http://www.instagram.com" target="blank">
+                                        <span class="text-warning fs-1">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="http://www.twitter.com" target="blank">
+                                        <span class="text-warning fs-1">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="http://www.twitch.com" target="blank">
+                                        <span class="text-warning fs-1">
+                                            <i class="fa-brands fa-twitch"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="http://www.tiktok.com" target="blank">
+                                        <span class="text-warning fs-1">
+                                            <i class="fa-brands fa-tiktok"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row p-2 text-warning text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellendus!</p>
+            </div>
+        </div>
+    </footer>
+    <!--FIN Seccion FOOTER-->
+
+    <!--Script de Jquery, Popper y Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Script propio debajo del todo -->
+    <script src="assets/js/jqueries.js"></script>
+</body>
+
+</html>
